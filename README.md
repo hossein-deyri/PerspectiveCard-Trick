@@ -2,13 +2,13 @@
 
 ![view](https://github.com/hossein-deyri/PerspectiveCard-Trick/assets/136192436/a2ab454e-66a1-4108-82fb-433e9f8f00ce)
 
-- [Demo Project](https://hossein-deyri.github.io/First-Project/)
+- [Demo Project]( https://hossein-deyri.github.io/PerspectiveCard-Trick/)
 
 - Developed by Hossein Deyri
 
 - Created - 2023-07-10
 
-- Technologies Used - Html5 , css3 , sass 
+- Technologies Used - Html5 , Css3 , Sass 
 
 - Role - Frontend
 
