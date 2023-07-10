@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
+  font-family: "Courgette", cursive;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+header > h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 4vw;
+}
+header > h2 {
+  color: white;
+  font-size: 2vw;
+}
+
+.main {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+.main > div {
+  width: 300px;
+  height: 400px;
+  transition: 2s;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 40px 40px 20px black;
+}
+.main > div:hover {
+  transform: rotateY(180deg);
+  box-shadow: none;
+}
+.main > div > figure {
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  transform-style: preserve-3d;
+}
+.main > div > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-style: preserve-3d;
+}
+.main > div > figure::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.842);
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transition: 1s;
+}
+.main > div > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0%, 0%, -1px);
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #8590da 80%);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+.main > div > div > h3 {
+  font-size: 30px;
+  transform: rotateX(360deg) rotateY(180deg);
+}
+.main > div > div > p {
+  font-size: 16px;
+  transform: rotateX(360deg) rotateY(180deg);
+  line-height: 28px;
+  padding: 10px;
+}
+.main > div > div > a {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
+  color: rgb(197, 206, 206);
+  transform: rotateX(360deg) rotateY(180deg);
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.main > div > div > a:hover {
+  font-size: 17px;
+  color: black;
+  background-image: linear-gradient(0deg, #ffffff 0%, #8590da 80%);
+}
+.main > div:nth-of-type(1) {
+  transform: perspective(800px) translateZ(-200px) rotateY(-30deg);
+}
+.main > div:nth-of-type(1):hover {
+  transform: rotateY(180deg);
+}
+.main > div:nth-of-type(2):hover {
+  transform: rotateY(180deg) scale(1.2);
+}
+.main > div:nth-of-type(3) {
+  transform: perspective(800px) translateZ(-200px) rotateY(30deg);
+}
+.main > div:nth-of-type(3):hover {
+  transform: rotateY(180deg);
+}/*# sourceMappingURL=perspective _card.css.map */
